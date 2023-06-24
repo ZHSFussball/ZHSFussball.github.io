@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
