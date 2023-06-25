@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('background_desktop.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -37,7 +37,7 @@ header {
     font-size: 128px;
 }
 
-.logo {
+.title {
     font-size: 2em;
     color: #fff;
     user-select: none;
@@ -95,9 +95,6 @@ header {
 .navigation .btnRegister-popup:hover {
     background-color: #fff;
     color: #022a2a;
-}
-
-.navigation img {
 }
 
 
@@ -279,7 +276,17 @@ header {
 
 @media only screen and (max-device-width: 768px) {
     /* CSS rules for mobile devices */
-  
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('background_mobile.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .soccerIcon {
         position: fixed;
         left: 5px;
@@ -294,13 +301,20 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        padding: 15px 20px;
+        padding: 15px 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 99;
     }
 
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 40px;
+      }
+    
     .navigation a {
         position: relative;
         font-size: 1.1em;
@@ -311,7 +325,7 @@ header {
     }
     .navigation .btnRegister-popup {
         width: 130px;
-        height: 50px;
+        height: 40px;
         background: transparent;
         border: 2px solid #fff;
         outline: none;
