@@ -1,4 +1,4 @@
-name: Deploy
+name: pip install Python packages
 
 on:
   push:
@@ -6,14 +6,27 @@ on:
       - main 
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+
+      - name: Set up Python version
+        uses: actions/setup-python@v3.0.0
         with:
           python-version: '3.9'
+          cache: 'pip'
+
+      - name: Create and start virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+      
+      - name: Check current directory
+        run: |
+          pwd
+          ls -alt
 
       - name: Install dependencies
         run: pip install -r requirements.txt
