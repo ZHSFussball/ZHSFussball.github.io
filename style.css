@@ -145,12 +145,10 @@ ul {
     transition: transform .35s ease;
 }
 
-
 .wrapper .form-box {
     width: 100%;
     padding: 20px;
 }
-
 
 .wrapper .icon-close {
     position: absolute;
@@ -211,8 +209,6 @@ ul {
     text-decoration: underline;
 }
 
-
-
 .mailto a:hover {
     text-decoration: underline;
 }
@@ -228,6 +224,7 @@ ul {
     display:block;
     color: white;
 }
+
 .info-box a {
     color: #d9ead3;
 }
@@ -246,7 +243,6 @@ ul {
 .text-box.narrow {
     width: 350px;
 }
-
 
 .text-box h2 {
     font-size: 2em;
@@ -300,7 +296,7 @@ ul {
         justify-content: flex-start;
         padding-left: 40px;
         padding-right: 30px;
-      }
+    }
     
     .navigation a {
         position: relative;
@@ -310,6 +306,7 @@ ul {
         font-weight: 500;
         margin-left: 5px;
     }
+
     .navigation .btnRegister-popup {
         width: 130px;
         height: 40px;
@@ -325,6 +322,7 @@ ul {
         margin-bottom: 20px;
         transition: .5s;
     }
+
     .navigation .btnRegister-popup:active {
         background-color: #fff;
         color: #022a2a;
