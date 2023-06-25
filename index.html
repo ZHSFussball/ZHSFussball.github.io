@@ -13,89 +13,63 @@
             <h2><a href="/" class="home">ZHS Soccer</a></h2>
         </div>
         <nav class="navigation">
-            <a href="/">Home</a>
-            <a href="/" class="language"><img heigth=20 width=20 src="images/flags/german.png" alt="German Flag" href=""></a>
+            <button class="btnRegister-popup">Anmelden</button>
+            <a href="#">Home</a>
+            <a href="#" class="language"><img heigth=20 width=20 src="images/flags/german.png" alt="German Flag" href=""></a>
             <a href="/en/index.html" class="language"><img heigth=20 width=20 src="images/flags/great_britain.png" alt="Great Britain Flag"></a>
             <a href="/contact.html">Kontakt</a>
-            <button class="btnRegister-popup">Anmelden</button>
         </nav>
     </header>
+
+    <div class="rules">
+        <div class="text-box narrow">
+            <h4>Wann?</h4>
+            <p>Freitag 07.07.2023</p>
+            <p>16:30 Uhr Anstoß der ersten Partie.</p>
+        </div>
+        <div class="text-box narrow">
+            <h4>Wo?</h4>
+            <p>Am Schwimmbad 7, 85356 Freising</p>
+            <p><a href="https://goo.gl/maps/wYpqmrkjCvHa35yXA">Google Maps</a></p>
+        </div>
+        <div class="text-box narrow">
+            <h4>Regeln</h4>
+            <p>6 gg. 6 auf ein Kleinfeld.</p>
+            <p>Ein Spiel dauert 12 Minuten.</p>
+            <p>Max. 10 Teams, auf 2 Gruppen verteilt.</p>
+            <p>Anschließend K.O. Phase.</p>
+        </div>
+        <div class="text-box narrow">
+            <h4>Bitte mitbringen.</h4>
+            <ul>
+                <li>Fussballschuhe für Naturrasen.</li>
+                <li>Schienbeinschoner.</li>
+                <li>Snacks</li>
+                <li>Sportsgeist und gute Laune.</li>
+            </ul>
+        </div>
+    </div>
+    
+
     <div class="wrapper">
         <span class="icon-close">
             <ion-icon name="close"></ion-icon>
         </span>
         
-        <div class="form-box team">
-            <h2>Teamanmeldung</h2>
-            <form id="team-form" action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input id="email" type="email" required>
-                    <label>E-Mail</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="flag"></ion-icon>
-                    </span>
-                    <input id="team-name" type="text" required>
-                    <label>Teamname</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="people"></ion-icon>
-                    </span>
-                    <input id="team-size" type="number" min="3" max="15" required>
-                    <label>Teamgröße</label>
-                </div>
-                <div class="general-terms-and-condition">
-                    <label>
-                        <input id="terms" type="checkbox" required>
-                        Ich habe die <a href="/terms.html">AGB</a> gelesen und stimme zu.
-                    </label>
-                </div>
-                <button type="submit" class="btn">Register</button>
+        <div class="form-box">
+            <h2>Anmeldung</h2>
+            <div>
                 <div class="team-solo">
-                    <p>Noch ohne Team? <a href='#' class='solo-link'>Als Spieler anmelden.</a></p>
+                    <p>Ihr seid ein Team? <a href='https://form.jotform.com/231756510371351' class='team-link'>Als Team anmelden.</a></p>
                 </div>
-            </form>
-        </div>
-
-        <div class="form-box solo">
-            <h2>Spieleranmeldung</h2>
-            <form id="solo-form" action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input id="email" type="email" required>
-                    <label>E-Mail</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="person"></ion-icon>
-                    </span>
-                    <input id="player-name" type="text" required>
-                    <label>Name</label>
-                </div>
-                <div class="general-terms-and-condition">
-                    <label>
-                        <input id="terms" type="checkbox" required>
-                        Ich habe die <a href="/terms.html">AGB</a> gelesen und stimme zu.
-                    </label>
-                </div>
-                <button type="submit" class="btn">Anmelden</button>
                 <div class="team-solo">
-                    <p>Ihr seid ein Team? <a href='#' class='team-link'>Als Team anmelden.</a></p>
+                    <p>Noch ohne Team? <a href='https://form.jotform.com/231757241269359' class='solo-link'>Als Spieler anmelden.</a></p>
                 </div>
-            </form>
+            </div>
         </div>
-
     </div>
 
     <script src="script.js"></script>
-    <script src="run_python.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

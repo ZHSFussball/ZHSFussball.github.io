@@ -29,9 +29,32 @@ header {
     z-index: 99;
 }
 
+a {
+    font-size: 1em;
+    color: #022a2a;
+    text-decoration: none;
+    font-weight: 600;
+}
 
+p {
+    margin-top: 5px;
+}
 
-heade
+h4{
+    color: #022a2a;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5em; /* Adjust this value based on the width of the bullet point */
+  }
+  ul li:before {
+    content: "•";
+    display: inline-block;
+    width: 1em; /* Adjust this value to match the width of the bullet point */
+    margin-left: -1em; /* Negative value equal to the width to hide the bullet point */
+  }
 
 .soccerIcon {
     position: fixed;
@@ -59,8 +82,6 @@ heade
     font-weight: 500;
     margin-left: 40px;
 }
-
-
 
 .navigation a::after {
     content: '';
@@ -101,11 +122,11 @@ heade
     color: #022a2a;
 }
 
-
 .wrapper {
     position: relative;
-    width: 400px;
-    height: 520px;
+    width: 350px;
+    height: 300px;
+    margin-left: 20px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -124,35 +145,12 @@ heade
     transition: transform .35s ease;
 }
 
-.wrapper.active {
-    height: 440px;
-}
 
 .wrapper .form-box {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
 }
 
-.wrapper .form-box.team {
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
-
-.wrapper.active .form-box.team {
-    transition: none;
-    transform: translateX(-400px);
-}
-
-.wrapper .form-box.solo {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
-.wrapper.active .form-box.solo {
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
 
 .wrapper .icon-close {
     position: absolute;
@@ -177,73 +175,9 @@ heade
     text-align: center;
 }
 
-.input-box {
+.rules {
     position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #022a2a;
-    margin: 30px 0;
-}
-
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #022a2a;
-    transform: translateY(-50%);
-    font-size: 1em;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #022a2a;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 5px;
-    font-size: 1.2em;
-    color: #022a2a;
-    line-height: 57px;
-}
-
-.general-terms-and-condition {
-    font-size: .9em;
-    color: #022a2a;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-}
-
-.general-terms-and-condition label input {
-    accent-color: #022a2a;
-    margin-right: 3px;
-}
-
-.general-terms-and-condition a {
-    color: #022a2a;
-    font-size: 1em;
-    text-decoration: none;
-    font-weight: 550;
-}
-
-.general-terms-and-condition a:hover {
-    text-decoration: underline;
+    margin-right: 20px;
 }
 
 .btn {
@@ -277,20 +211,31 @@ heade
     text-decoration: underline;
 }
 
-.mailto a {
-    font-size: 1em;
-    color: #022a2a;
-    text-decoration: none;
-    font-weight: 600;
-}
+
 
 .mailto a:hover {
     text-decoration: underline;
 }
 
+.info-box {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(2, 42, 42, .8);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+    display:block;
+    color: white;
+}
+.info-box a {
+    color: #d9ead3;
+}
+
 .text-box {
     position: relative;
     padding: 20px;
+    margin-bottom: 20px;
     background: rgba(255, 255, 255, .8);
     border-radius: 20px;
     backdrop-filter: blur(10px);
@@ -298,19 +243,15 @@ heade
     display:block;
 }
 
-p {
-    margin-top: 5px;
+.text-box.narrow {
+    width: 350px;
 }
+
 
 .text-box h2 {
     font-size: 2em;
     color: #022a2a;
     text-align: center;
-}
-
-h4 {
-    color: #022a2a;
-    margin-top: 5px;
 }
 
 .home {
@@ -358,6 +299,7 @@ h4 {
         flex-wrap: wrap;
         justify-content: flex-start;
         padding-left: 40px;
+        padding-right: 30px;
       }
     
     .navigation a {
@@ -380,6 +322,7 @@ h4 {
         color: #fff;
         font-weight: 500;
         margin-left: 0px;
+        margin-bottom: 20px;
         transition: .5s;
     }
     .navigation .btnRegister-popup:active {
@@ -389,13 +332,28 @@ h4 {
 
     .text-box {
         position: relative;
-        margin-top: 140px;  
         padding: 20px;
+        margin-left: 10px;
         background: rgba(255, 255, 255, .8);
         border-radius: 20px;
         backdrop-filter: blur(10px);
         box-shadow: 0 0 30px rgba(0, 0, 0, .8);
         display:block;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        margin: 10px;
+    }
+    
+    .rules {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+        padding: 20px;
     }
   }
   
