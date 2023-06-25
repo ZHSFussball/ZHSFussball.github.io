@@ -22,11 +22,6 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
-      - name: Check current directory
-        run: |
-          pwd
-          ls -alt
 
       - name: Install dependencies
         run: pip install -r requirements.txt
