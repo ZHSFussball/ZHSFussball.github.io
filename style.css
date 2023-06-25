@@ -308,7 +308,7 @@ ul {
     }
 
     .navigation .btnRegister-popup {
-        width: 130px;
+        width: 125px;
         height: 40px;
         background: transparent;
         border: 2px solid #fff;
@@ -342,6 +342,10 @@ ul {
     .wrapper {
         position: relative;
         width: 100%;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .8);
         z-index: 1;
         margin: 10px;
     }
