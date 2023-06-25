@@ -43,6 +43,10 @@ header {
     user-select: none;
 }
 
+.navigation .language{
+    margin-left: 0px;
+}
+
 .navigation a {
     position: relative;
     font-size: 1.1em;
@@ -51,6 +55,8 @@ header {
     font-weight: 500;
     margin-left: 40px;
 }
+
+
 
 .navigation a::after {
     content: '';
@@ -90,6 +96,10 @@ header {
     background-color: #fff;
     color: #022a2a;
 }
+
+.navigation img {
+}
+
 
 .wrapper {
     position: relative;
@@ -226,7 +236,9 @@ header {
 
 .general-terms-and-condition a {
     color: #022a2a;
+    font-size: 1em;
     text-decoration: none;
+    font-weight: 550;
 }
 
 .general-terms-and-condition a:hover {
@@ -265,18 +277,55 @@ header {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
     /* CSS rules for mobile devices */
   
-    body {
-      background-color: lightblue;
-      font-size: 14px;
+    .soccerIcon {
+        position: fixed;
+        left: 5px;
+        top: 0px;
+        color: gray;
+        font-size: 64px;
+        
     }
-  
-    /* Additional mobile-specific styling */
-    .mobile-only {
-      display: block;
-      color: red;
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+
+    .navigation a {
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    .navigation .btnRegister-popup {
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 0px;
+        transition: .5s;
+    }
+    .navigation .btnRegister-popup:active {
+        background-color: #fff;
+        color: #022a2a;
     }
   }
   
