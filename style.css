@@ -94,7 +94,7 @@ header {
 .wrapper {
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 520px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -103,11 +103,61 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.15s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+    transition: transform .35s ease;
+}
+
+.wrapper.active {
+    height: 440px;
 }
 
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
+}
+
+.wrapper .form-box.team {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.team {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.solo {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.solo {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #022a2a;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .form-box h2 {
