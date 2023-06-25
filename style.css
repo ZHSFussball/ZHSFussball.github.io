@@ -348,10 +348,10 @@ ul {
     
     .rules {
         position: absolute;
-        top: 50;
+        top: 140px;
         left: 0;
         width: 100%;
-        padding: 20px;
+        padding: 5px;
     }
 }
   
