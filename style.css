@@ -263,3 +263,20 @@ header {
 .solo-register a:hover {
     text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* CSS rules for mobile devices */
+  
+    body {
+      background-color: lightblue;
+      font-size: 14px;
+    }
+  
+    /* Additional mobile-specific styling */
+    .mobile-only {
+      display: block;
+      color: red;
+    }
+  }
+  
