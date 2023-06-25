@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background_desktop.png') no-repeat;
+    background: url('images/background_desktop.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -22,12 +22,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
+
+
+
+heade
 
 .soccerIcon {
     position: fixed;
@@ -255,7 +259,7 @@ header {
     font-weight: 500;
 }
 
-.solo-register {
+.team-solo {
     font-size: .9em;
     color: #022a2a;
     text-align: center;
@@ -263,16 +267,56 @@ header {
     margin: 25px 0 10px;
 }
 
-.solo-register a {
+.team-solo a {
     color: #022a2a;
     text-decoration: none;
     font-weight: 600;
 }
 
-.solo-register a:hover {
+.team-solo a:hover {
     text-decoration: underline;
 }
 
+.mailto a {
+    font-size: 1em;
+    color: #022a2a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mailto a:hover {
+    text-decoration: underline;
+}
+
+.text-box {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+    display:block;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.text-box h2 {
+    font-size: 2em;
+    color: #022a2a;
+    text-align: center;
+}
+
+h4 {
+    color: #022a2a;
+    margin-top: 5px;
+}
+
+.home {
+    text-decoration: none;
+    color: #fff;
+}
 
 @media only screen and (max-device-width: 768px) {
     /* CSS rules for mobile devices */
@@ -282,7 +326,7 @@ header {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: url('background_mobile.png') no-repeat;
+        background: url('images/background_mobile.png') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -298,10 +342,11 @@ header {
 
     header {
         position: fixed;
+        background: #022a2a;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 15px 10px;
+        padding: 15px 10px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -340,6 +385,17 @@ header {
     .navigation .btnRegister-popup:active {
         background-color: #fff;
         color: #022a2a;
+    }
+
+    .text-box {
+        position: relative;
+        margin-top: 140px;  
+        padding: 20px;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .8);
+        display:block;
     }
   }
   
