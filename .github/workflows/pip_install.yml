@@ -16,5 +16,4 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: ls -al
-        # run: pip install -r requirements.txt
+        run: pip install -r requirements.txt
