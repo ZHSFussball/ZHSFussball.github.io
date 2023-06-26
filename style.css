@@ -43,8 +43,12 @@ p, li {
     margin-top: 5px;
 }
 
-h3, h4{
+h4{
     color: #022a2a;
+    margin-top: 5px;
+}
+
+h3 {
     margin-top: 5px;
 }
 
