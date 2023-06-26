@@ -30,17 +30,20 @@ header {
 }
 
 a {
-    font-size: 1em;
+    font-size: .9em;
     color: #022a2a;
     text-decoration: none;
     font-weight: 600;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 p, li {
     margin-top: 5px;
 }
 
-h4{
+h3, h4{
     color: #022a2a;
     margin-top: 5px;
 }
@@ -192,7 +195,7 @@ ul li:before {
 }
 
 .team-solo {
-    font-size: .9em;
+    font-size: 1.1em;
     color: #022a2a;
     text-align: center;
     font-weight: 500;
